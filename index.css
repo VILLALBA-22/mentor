@@ -1,0 +1,124 @@
+:root{
+    --orange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.body{
+    padding: 30% 8%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lexend Deca";
+    font-size: 15px;
+}
+
+
+.body > div{
+    color: beige;
+}
+
+
+h3{
+    font-family: 'Big Shoulders Display', cursive;;
+    color: beige;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.sedans{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sedans, .suv, .lixury{
+    background: var(--orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    height: 350px;
+}
+
+.suv{
+    background: var(--Darkcyan);
+}
+
+.lixury{
+    background: var(--Verydarkcyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.learn{
+    width: 70%;
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: beige;
+}
+
+.sedanslearn:hover{
+    background: var(--orange);
+    color: beige;
+    border: solid 2px beige;
+}
+
+.suvlearn:hover{
+    background: var(--Darkcyan);
+    color: beige;
+    border: solid 2px beige;
+
+}
+
+.lixurylearn:hover{
+    background: var(--Verydarkcyan);
+    color: beige;
+    border: solid 2px beige;
+}
+
+.sedanslearn{
+    color: var(--orange);
+}
+
+.suvlearn{
+    color: var(--Darkcyan);
+}
+
+.lixurylearn{
+    color: var(--Verydarkcyan);
+}
+
+.attribution { font-size: 11px; text-align: center; color: rgb(90, 52, 177);}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width: 1000px){
+    .body{
+        padding: 20vh 10%;
+        flex-direction: row;
+        height: 100vh;  
+    }
+
+
+    .sedans{
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .lixury{
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .suv{
+        height: 100%;
+    }
+}
