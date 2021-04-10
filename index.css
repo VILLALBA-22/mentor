@@ -100,9 +100,9 @@ h3{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 900px){
     .body{
-        padding: 20vh 10%;
+        padding: 20vh 15%;
         flex-direction: row;
         height: 100vh;  
     }
